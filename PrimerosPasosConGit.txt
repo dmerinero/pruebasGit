@@ -7,17 +7,19 @@ En primer lugar instalaremos la bash de Git (en función de nuestro Sistema Oper
 
 A continuación, nos crearemos una cuenta en GitHub (a día de hoy, año 2017, si se emplea la cuenta de correo de alumnos UPM se permite crear repositorios privados). Habrá que seguir los pasos para la creación de la cuenta.
 
-Una vez creada, crearemos un repositorio en GitHub y abriremos un bash de Git en nuestro workspace (la forma de acceder a la bash variará en función del Sistema Operativo).
-
 Seguiremos configurando los parámetros de nuestro Git con los comandos:
 
 	git config --global core.editor <nombre de nuestro editor favorito>
 	git config --global user.name <nombre de usuario de GitHub>
 	git config --global user.email <dirección de correo electrónico (preferiblemente la que hemos utilizado para crear la cuenta en GitHub)>
 
-ó, si se prefiere, también es posible modificar el fichero de configuracion con el comando:
+o, si se prefiere, también es posible modificar el fichero de configuracion con el comando:
 
-	git config --global edit
+	git config --global --edit
+
+
+ Trabajando en local
+---------------------
 
 Para comenzar la gestión de versiones del proyecto (una vez tengamos un proyecto creado) utilizaremos los comandos:
 
@@ -32,6 +34,8 @@ para saber que ficheros no están preparados para el commit. Para preparar un fi
 	git add <nombre del fichero + extensión>	->	añade el fichero a la cola de preparados para el commit. Es de buena praxis utilizar git status después para comprobarel cambio
 	git commit -m "<mensaje referente al cambio>"	->	guarda los cambios en el repositorio local
 
+o también se pueden combinar ambos con el comando:
+
 	
 
 
@@ -39,3 +43,5 @@ para saber que ficheros no están preparados para el commit. Para preparar un fi
 	git remote add origin <URL del repositorio>	->	para identificar el repositorio remoto
 
 	git push -u origin master
+	git config --list				-> 	lista todos los parámetros de la configuración
+Una vez creada, crearemos un repositorio en GitHub y abriremos un bash de Git en nuestro workspace (la forma de acceder a la bash variará en función del Sistema Operativo).
