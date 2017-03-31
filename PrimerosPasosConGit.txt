@@ -1,6 +1,6 @@
 
- Primeros pasos con Git
-------------------------
+			 Primeros pasos con Git
+			------------------------
 
 
 En primer lugar instalaremos la bash de Git (en función de nuestro Sistema Operativo la instalación sera distinta (captain obvious), para más información mirar los documentos de instalación anexos o en su defecto la documentación oficial de Git).
@@ -18,8 +18,11 @@ o, si se prefiere, también es posible modificar el fichero de configuracion con
 	git config --global --edit
 
 
- Trabajando en local
----------------------
+ 1. Trabajando en un repositorio local
+---------------------------------------
+
+ 	 1.1. Lo básico:
+	-----------------
 
 Para comenzar la gestión de versiones del proyecto (una vez tengamos un proyecto creado) utilizaremos los comandos:
 
@@ -27,16 +30,17 @@ Para comenzar la gestión de versiones del proyecto (una vez tengamos un proyect
 
 Después, utilizaremos el comando:
 
-	git status
+	git status	->	revisa el estado de los ficheros bajo control de Git
 
 para saber que ficheros no están preparados para el commit. Para preparar un fichero para el commit, basta con usar el comando:
 
-	git add <nombre del fichero + extensión>	->	añade el fichero a la cola de preparados para el commit. Es de buena praxis utilizar git status después para comprobarel cambio
+	git add <nombre del fichero + extensión>	->	añade el fichero a la cola de preparados para el commit. Es de buena praxis utilizar git status después para comprobar el cambio
 	git commit -m "<mensaje referente al cambio>"	->	guarda los cambios en el repositorio local
 
 o también se pueden combinar ambos con el comando:
 
-	
+	git commit -a -m "<mensaje referente al cambio>"	->	realiza un commit sobre todos los ficheros modificados o añadidos
+
 
 
 
