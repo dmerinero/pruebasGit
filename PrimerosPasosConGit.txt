@@ -49,12 +49,10 @@ o también se pueden combinar ambos con el comando:
 
 	git commit -a -m "<mensaje referente al cambio>"	->	realiza un commit sobre todos los ficheros modificados o añadidos
 
-
-
-
 	git remote add origin <URL del repositorio>	->	para identificar el repositorio remoto
 
-	git push -u <rama>				->	sube los cambios de la rama al control de versiones remoto de GitHub
+	git push -u <rama local> <rama repositorio>	->	sube los cambios de la rama local a la rama del repositorio remoto de GitHub
+	
 	git config --list				-> 	lista todos los parámetros de la configuración
 	git branch -vv
 	git log <rama local>..<rama remota (en formato de dirección relativa. Ejemplo: origin/master)>
