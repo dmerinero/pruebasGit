@@ -1,7 +1,15 @@
 
-			 Primeros pasos con Git
-			------------------------
+		 Introducción
+		--------------
 
+Git es un software abierto para el Sistema de Gestión de Versiones de tipo distribuido
+(aunque ofrece la posivilidad de trabajar también en local y en remoto) que trabaja
+guardando el estado de los ficheros 
+
+
+
+		 Primeros pasos con Git
+		------------------------
 
 En primer lugar instalaremos la bash de Git (en función de nuestro Sistema Operativo la instalación sera distinta (captain obvious), para más información mirar los documentos de instalación anexos o en su defecto la documentación oficial de Git).
 
@@ -46,6 +54,13 @@ o también se pueden combinar ambos con el comando:
 
 	git remote add origin <URL del repositorio>	->	para identificar el repositorio remoto
 
-	git push -u origin master
+	git push -u <rama>				->	sube los cambios de la rama al control de versiones remoto de GitHub
 	git config --list				-> 	lista todos los parámetros de la configuración
+	git branch -vv
+	git log <rama local>..<rama remota (en formato de dirección relativa. Ejemplo: origin/master)>
+
+Para hacer un rollback:
+	git log --oneline 				->	lista todos los commit con su su checksum
+desde la rama master:
+	git merge <checksum al que queremos volver>	->	vuelve al commit elegido
 Una vez creada, crearemos un repositorio en GitHub y abriremos un bash de Git en nuestro workspace (la forma de acceder a la bash variará en función del Sistema Operativo).
